@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="display:flex;flex-direction:column;align-items: center;">
+        <h1 style="font-family: 'JetBrains Mono', serif;
+                color: #1E1E1E;
+                font-weight: bold;
+                font-size: 70px;margin:0;">SYSMAIA</h1>
+
+        <p style="font-family: 'JetBrains Mono', serif;
+                    color: #1E1E1E;
+                    font-weight: normal;
+                    font-size: 20px;margin:0;">vídeo converter</p>
+    </div>
+
+
+    <form action="/convert" style="display:flex;flex-direction:column;align-items: center;padding-top: 5vh;" method="post">
+
+        <input type="text" name="link" id="link" placeholder="https://youtube.com/watch?v=video..." value="{{ request.form['title'] }}">
+        <button type="submit">Converter</button>
+
+    </form>
+
+{% endblock %}
