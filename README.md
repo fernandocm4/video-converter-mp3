@@ -1,7 +1,7 @@
 
 # Conversor de vídeos para audio
 
-Uma API em Flask para converter vídeos do youtube para audio mp3.
+Uma API em Flask para converter vídeos do youtube para audio mp3 (versão preliminar).
 
 
 ## Instalação do projeto no Ubuntu
